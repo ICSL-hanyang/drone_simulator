@@ -1,10 +1,14 @@
-copy pkg in catkin_ws/src & cm
+solar_sys_formation 그대로 사용하면 에러 발생 수정됨
 
-sudo apt-get install ros-kinetic-urdf,kdl_parser,robot_state_publisher,collada_urdf
-sudo apt-get install ros-kinetic-joint-state-controller,effort-controllers,position-controllers
-  while(1){
-  trajectory_msgs::MultiDOFJointTrajectory trajectory_msg;
-  trajectory_pub.publish(trajectory_msg);
-  }
-binding by while(1)
-# drone_simulator
+
+첨부파일 & 파일 위치
+
+iris.sdf - ~/catkin_ws/src/Firmware/Tools/sitl_gazebo/models/iris$
+iris2.sdf - ~/catkin_ws/src/Firmware/Tools/sitl_gazebo/models/iris$
+
+iris & iris2 demon - ~/catkin_ws/src/Firmware/posix-configs/SITL/init/lpe
+
+custom_sitl.launch - ~/catkin_ws/src/Firmware/launch
+
+
+
